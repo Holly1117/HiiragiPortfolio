@@ -22,7 +22,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ Art }) => {
   return (
     <Box>
       <Image
-        src={Art.image}
+        src={process.env.PUBLIC_URL + Art.image}
         alt={Art.title}
         onClick={onOpen}
         cursor="pointer"
@@ -32,7 +32,11 @@ const ImageModal: React.FC<ImageModalProps> = ({ Art }) => {
       <Modal isOpen={isOpen} onClose={onClose} size="lg">
         <ModalOverlay />
         <ModalContent sx={CustomCSS.ArtModal}>
-          <Image src={Art.image} alt={Art.title} roundedTop={3} />
+          <Image
+            src={process.env.PUBLIC_URL + Art.image}
+            alt={Art.title}
+            roundedTop={3}
+          />
           <Text textAlign="center" m={3} fontWeight="bold">
             {Art.title}
           </Text>

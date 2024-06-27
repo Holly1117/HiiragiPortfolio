@@ -11,7 +11,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ Work }) => {
   return (
     <Card sx={CustomCSS.WorkCard}>
       <Image
-        src={Work.image}
+        src={process.env.PUBLIC_URL + Work.image}
         alt={Work.title}
         mb={2}
         roundedTop={3}
