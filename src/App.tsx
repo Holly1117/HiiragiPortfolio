@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Works from "./pages/Works";
+import Arts from "./pages/Arts";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { Container } from "@chakra-ui/react";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Container maxW="container.md" pt={10}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/arts" element={<Arts />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;

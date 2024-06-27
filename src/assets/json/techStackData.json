@@ -1,0 +1,68 @@
+[
+  {
+    "name": "C#"
+  },
+  {
+    "name": "Java"
+  },
+  {
+    "name": "Python"
+  },
+  {
+    "name": "Go"
+  },
+  {
+    "name": "VBA"
+  },
+  {
+    "name": "JavaScript"
+  },
+  {
+    "name": "TypeScript"
+  },
+  {
+    "name": "Knockout.js"
+  },
+  {
+    "name": "jQuery"
+  },
+  {
+    "name": "React"
+  },
+  {
+    "name": "Vue.js"
+  },
+  {
+    "name": "R"
+  },
+  {
+    "name": "HTML"
+  },
+  {
+    "name": "CSS"
+  },
+  {
+    "name": "SCSS"
+  },
+  {
+    "name": "AWS"
+  },
+  {
+    "name": "Azure"
+  },
+  {
+    "name": "Ubuntu"
+  },
+  {
+    "name": "RedHat"
+  },
+  {
+    "name": "WindowsServer"
+  },
+  {
+    "name": "Git"
+  },
+  {
+    "name": "Mercurial"
+  }
+]
