@@ -9,7 +9,7 @@ import { Container } from "@chakra-ui/react";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/HiiragiPortfolio">
       <Header />
       <Container maxW="container.md" pt={10}>
         <Routes>
