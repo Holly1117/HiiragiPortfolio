@@ -15,7 +15,7 @@ const Experience: React.FC = () => {
         {experienceItems.map((exp) => (
           <Box p={5} sx={CustomCSS.WorkCard}>
             <Image
-              src={exp.image}
+              src={process.env.PUBLIC_URL + exp.image}
               alt={exp.title}
               mb={4}
               p={5}

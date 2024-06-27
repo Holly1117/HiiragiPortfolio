@@ -5,7 +5,10 @@ const About: React.FC = () => {
   return (
     <Box textAlign="center" mt="100px">
       <Box>
-        <Avatar size="xl" src="/images/hiiragi_icon.png" />
+        <Avatar
+          size="xl"
+          src={process.env.PUBLIC_URL + "/images/hiiragi_icon.png"}
+        />
         <Box>
           <Heading mt={4} size="lg">
             柊 琴音
