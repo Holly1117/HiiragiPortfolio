@@ -12,11 +12,7 @@ const About: React.FC = () => {
           flexDirection={{ base: "column", sm: "row" }}
           alignItems={{ base: "left", sm: "center" }}
         >
-          <Avatar
-            size="xl"
-            src={process.env.PUBLIC_URL + "/images/hiiragi_icon.png"}
-            mr={{ base: 0, sm: 10 }}
-          />
+          <Avatar size="xl" mr={{ base: 0, sm: 10 }} />
           <Box mt={{ base: 4, sm: 0 }}>
             <Heading mt={2} size="md">
               柊 琴音
