@@ -35,16 +35,6 @@ const About: React.FC = () => {
             >
               Hiiragi Kotone
             </Heading>
-            <Text fontSize="sm">トヨタ自動車に期間工として3年間勤務。</Text>
-            <Text fontSize="sm">
-              その後、趣味であるプログラミングを行うためIT企業に転職。
-            </Text>
-            <Text my={2} fontSize="sm">
-              エンジニアとしてより多くのプロジェクトに関わる中で、より柔軟な働き方を求め、独立を決意。
-            </Text>
-            <Text fontSize="sm">
-              現在は個人としてWebとアプリ開発、ドット絵制作を行っております。
-            </Text>
             <Text mt={1} fontSize="sm" color="#262626">
               寿司しか勝たん。
             </Text>
