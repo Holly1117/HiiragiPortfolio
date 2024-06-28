@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Text } from "@chakra-ui/react";
-import { CustomCSS } from "../styles/CustomCSS";
+import { customCSS } from "../styles/customCSS";
 import { useNavigate } from "react-router-dom";
 interface ViewMoreButtonProps {
   toLink: string;
@@ -17,7 +17,12 @@ const ViewMoreButton: React.FC<ViewMoreButtonProps> = ({
     navigate(toLink);
   };
   return (
-    <Button size="lg" sx={CustomCSS.ArtModal} onClick={handleClick}>
+    <Button
+      size="md"
+      sx={customCSS.viewMoreButtonStyle}
+      onClick={handleClick}
+      _hover={customCSS.hoverEffectStyle}
+    >
       <Text fontSize="sm">{ButtonName}</Text>
     </Button>
   );

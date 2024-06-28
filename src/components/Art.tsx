@@ -11,14 +11,10 @@ const Art: React.FC = () => {
   return (
     <Box py={10}>
       <Heading size="sm" mb={4}>
-        アート
+        作品
       </Heading>
-      <SimpleGrid
-        columns={{ base: 2, sm: 3, md: 4 }}
-        justifyItems="center"
-        spacing={5}
-      >
-        {artItems.slice(0, 8).map((art) => (
+      <SimpleGrid minChildWidth="100px" justifyItems="center" spacing={5}>
+        {artItems.slice(0, 12).map((art) => (
           <ImageModal key={art.title} Art={art} />
         ))}
       </SimpleGrid>

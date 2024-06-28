@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, Text } from "@chakra-ui/react";
-import { CustomCSS } from "../styles/CustomCSS";
+import { Card, Text, ScaleFade } from "@chakra-ui/react";
+import { customCSS } from "../styles/customCSS";
 import { TechItem } from "../types/portfolioData";
 interface TechCardProps {
   Tech: TechItem;
@@ -8,9 +8,11 @@ interface TechCardProps {
 
 const TechCard: React.FC<TechCardProps> = ({ Tech }) => {
   return (
-    <Card sx={CustomCSS.TechCard} key={Tech.name} variant={"elevated"}>
-      <Text fontSize="xs">{Tech.name}</Text>
-    </Card>
+    <ScaleFade initialScale={0.5} in={true}>
+      <Card sx={customCSS.cardStyle} key={Tech.name} variant="elevated" p={2}>
+        <Text fontSize="sm">{Tech.name}</Text>
+      </Card>
+    </ScaleFade>
   );
 };
 

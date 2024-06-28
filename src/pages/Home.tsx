@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import About from "../components/About";
 import Experience from "../components/Experience";
 import Certification from "../components/Certification";
@@ -9,14 +9,14 @@ import Art from "../components/Art";
 
 const Home: React.FC = () => {
   return (
-    <Box>
+    <Container maxW="container.md" pt={10}>
       <About />
       <Experience />
       <TechStack />
       <Certification />
       <Work />
       <Art />
-    </Box>
+    </Container>
   );
 };
 

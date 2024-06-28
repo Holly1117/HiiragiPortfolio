@@ -11,7 +11,7 @@ const Certification: React.FC = () => {
       <Heading size="sm" mb={4}>
         資格
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+      <SimpleGrid minChildWidth="300px" spacing={4}>
         {tecmItems.map((tech) => (
           <TechCard key={tech.name} Tech={tech} />
         ))}

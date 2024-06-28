@@ -6,6 +6,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
+    "@chakra-ui/transition": "^2.1.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@testing-library/jest-dom": "^5.17.0",
@@ -16,7 +17,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-router-dom": "^5.3.3",
-    "framer-motion": "^11.2.11",
+    "framer-motion": "^11.2.12",
     "node-sass": "^9.0.0",
     "react": "^18.3.1",
     "react-copy-to-clipboard": "^5.1.0",

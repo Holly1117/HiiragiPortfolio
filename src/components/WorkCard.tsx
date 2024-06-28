@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, Image, Text } from "@chakra-ui/react";
+import { Card, Image, Text, ScaleFade } from "@chakra-ui/react";
 import { WorkItem } from "../types/portfolioData";
-import { CustomCSS } from "../styles/CustomCSS";
+import { customCSS } from "../styles/customCSS";
 
 interface WorkCardProps {
   Work: WorkItem;
@@ -9,21 +9,18 @@ interface WorkCardProps {
 
 const WorkCard: React.FC<WorkCardProps> = ({ Work }) => {
   return (
-    <Card sx={CustomCSS.WorkCard}>
-      <Image
-        src={process.env.PUBLIC_URL + Work.image}
-        alt={Work.title}
-        mb={2}
-        roundedTop={3}
-        sx={CustomCSS.WorkImage}
-      />
-      <Text fontSize="sm" fontWeight="bold" textAlign={"center"}>
-        {Work.title}
-      </Text>
-      <Text fontSize="xs" py={2} px={3} textAlign={"center"}>
-        {Work.description}
-      </Text>
-    </Card>
+    <ScaleFade initialScale={0.5} in={true}>
+      <Card sx={customCSS.cardStyle} _hover={customCSS.hoverEffectStyle}>
+        <Image
+          src={process.env.PUBLIC_URL + Work.image}
+          alt={Work.title}
+          sx={customCSS.imageStyle}
+        />
+        <Text fontSize="sm" fontWeight="bold" textAlign="center" mb={2}>
+          {Work.title}
+        </Text>
+      </Card>
+    </ScaleFade>
   );
 };
 

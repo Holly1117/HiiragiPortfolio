@@ -1,31 +1,35 @@
 import React from "react";
-import { Box, Flex, Avatar, VStack, Heading, Text } from "@chakra-ui/react";
+import { Box, Avatar, ScaleFade, Heading, Text } from "@chakra-ui/react";
 
 const About: React.FC = () => {
   return (
     <Box textAlign="center" mt="100px">
-      <Box>
-        <Avatar
-          size="xl"
-          src={process.env.PUBLIC_URL + "/images/hiiragi_icon.png"}
-        />
+      <ScaleFade initialScale={0.5} in={true}>
         <Box>
-          <Heading mt={4} size="lg">
-            柊 琴音
-          </Heading>
-          <Text mt={1} mb={4} fontSize="sm">
-            自宅警備員
-          </Text>
-          <Text fontSize="sm">
-            高校を卒業後、愛知県のトヨタ自動車で3年間勤務しましたが、プログラマーの夢を追い続け、その後東京のIT企業に転職しました。
-            刺激的なプロジェクトに携わりながら成長することができましたが、より柔軟な働き方を求めて会社を離れ、現在は自宅警備員として活動しています。
-          </Text>
-          <Text fontSize="sm">
-            趣味は多岐にわたり、プログラミング、ゲーム、読書、映画鑑賞、温泉など、10以上の多趣味があります。
-          </Text>
-          <Text fontSize="sm">好きな食べ物は寿司。週に2回は食べています。</Text>
+          <Avatar
+            size="xl"
+            src={process.env.PUBLIC_URL + "/images/hiiragi_icon.png"}
+          />
+          <Box>
+            <Heading my={4} size="lg">
+              柊 琴音
+            </Heading>
+            <Text fontSize="sm">トヨタ自動車に期間工として3年間勤務。</Text>
+            <Text fontSize="sm">
+              その後、趣味であるプログラミングを行うためIT企業に転職。
+            </Text>
+            <Text my={2} fontSize="sm">
+              エンジニアとしてより多くのプロジェクトに関わる中で、より柔軟な働き方を求め、独立を決意。
+            </Text>
+            <Text fontSize="sm">
+              現在は個人としてWebとアプリ開発、ドット絵制作を行っております。
+            </Text>
+            <Text mt={2} fontSize="xs" color="#262626">
+              寿司しか勝たん。
+            </Text>
+          </Box>
         </Box>
-      </Box>
+      </ScaleFade>
     </Box>
   );
 };

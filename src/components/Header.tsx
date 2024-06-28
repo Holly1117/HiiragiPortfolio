@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Box, Flex, Text, IconButton } from "@chakra-ui/react";
-import { CustomCSS } from "../styles/CustomCSS";
+import { Box, Flex, Text, IconButton, ScaleFade } from "@chakra-ui/react";
+import { customCSS } from "../styles/customCSS";
 import { CopyIcon } from "@chakra-ui/icons";
 import { useToast } from "@chakra-ui/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -22,33 +22,30 @@ const Header = () => {
   };
 
   return (
-    <Box
-      pl={7}
-      pr={3}
-      py={2}
-      position="fixed"
-      top={0}
-      left={0}
-      right={0}
-      zIndex={10}
-      sx={CustomCSS.Header}
-    >
-      <Flex justify="space-between" align="center">
-        <Text fontSize="lg" fontWeight="bold" align="center">
-          <Link to="/">Hiiragi Portfolio</Link>
-        </Text>
-        <CopyToClipboard text={textToCopy} onCopy={handleCopy}>
-          <IconButton
-            variant="ghost"
-            aria-label="domain copy"
-            icon={<CopyIcon />}
-            sx={CustomCSS.HeaderButton}
-            fontSize={22}
-            _hover={{ backgroundColor: "transparent" }}
-          />
-        </CopyToClipboard>
-      </Flex>
-    </Box>
+    <ScaleFade initialScale={0.5} in={true}>
+      <Box sx={customCSS.headerStyle}>
+        <Flex justify="space-between" align="center">
+          <Text
+            fontSize="lg"
+            fontWeight="bold"
+            align="center"
+            _hover={customCSS.headerHoverStyle}
+          >
+            <Link to="/">Hiiragi Portfolio</Link>
+          </Text>
+          <CopyToClipboard text={textToCopy} onCopy={handleCopy}>
+            <IconButton
+              variant="ghost"
+              aria-label="domain copy"
+              icon={<CopyIcon />}
+              sx={customCSS.headerButtonStyle}
+              fontSize={22}
+              _hover={customCSS.headerHoverStyle}
+            />
+          </CopyToClipboard>
+        </Flex>
+      </Box>
+    </ScaleFade>
   );
 };
 

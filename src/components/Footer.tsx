@@ -1,9 +1,10 @@
+import React from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
-import { CustomCSS } from "../styles/CustomCSS";
+import { customCSS } from "../styles/customCSS";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <Box p={4} mt={8} sx={CustomCSS.Footer}>
+    <Box as="footer" sx={customCSS.footerStyle}>
       <Flex justify="center">
         <Text fontSize="sm">© hiiragi.dev All rights reserved.</Text>
       </Flex>
