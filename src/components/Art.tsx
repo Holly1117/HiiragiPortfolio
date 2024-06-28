@@ -10,7 +10,7 @@ const Art: React.FC = () => {
 
   return (
     <Box py={10}>
-      <Heading size="sm" mb={4}>
+      <Heading size="md" mb={6}>
         作品
       </Heading>
       <SimpleGrid minChildWidth="100px" justifyItems="center" spacing={5}>

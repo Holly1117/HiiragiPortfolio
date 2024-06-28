@@ -17,10 +17,10 @@ const Experience: React.FC = () => {
   const experienceItems: WorkItem[] = experiencesData;
   return (
     <Box py={10}>
-      <Heading size="sm" mb={4}>
+      <Heading size="md" mb={6}>
         業務経験
       </Heading>
-      <SimpleGrid columns={{ base: 1, sm: 2, xl: 3 }} spacing={4}>
+      <SimpleGrid columns={{ base: 1, sm: 2, xl: 3 }} spacing={5}>
         {experienceItems.map((exp) => (
           <ScaleFade initialScale={0.5} in={true}>
             <Card p={4} sx={customCSS.cardStyle}>

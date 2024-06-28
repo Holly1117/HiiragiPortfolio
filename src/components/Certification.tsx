@@ -8,7 +8,7 @@ const Certification: React.FC = () => {
   const tecmItems: TechItem[] = certificationsData;
   return (
     <Box py={10}>
-      <Heading size="sm" mb={4}>
+      <Heading size="md" mb={6}>
         資格
       </Heading>
       <SimpleGrid minChildWidth="300px" spacing={4}>

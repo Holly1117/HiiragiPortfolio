@@ -8,7 +8,7 @@ const TechStack: React.FC = () => {
   const techItem: TechItem[] = techStackData;
   return (
     <Box py={10}>
-      <Heading size="sm" mb={4}>
+      <Heading size="md" mb={6}>
         技術スタック
       </Heading>
       <SimpleGrid minChildWidth="120px" spacing={4}>

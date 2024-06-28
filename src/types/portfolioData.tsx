@@ -4,6 +4,7 @@ export interface WorkItem {
   url: string;
   image: string;
   category: string;
+  language: string[];
 }
 
 export interface TechItem {

@@ -54,6 +54,14 @@ const cardStyle = {
     "rgba(15, 15, 15, 0.2) 0px 0px 0px 1px, rgba(15, 15, 15, 0.2) 0px 2px 4px",
 };
 
+const badgeStyle = {
+  fontSize: "0.7rem",
+  textTransform: "none",
+  fontWeight: "none",
+  backgroundColor: colors.tertiary,
+  color: colors.text,
+};
+
 const imageStyle = {
   backgroundColor: colors.secondary,
   maxHeight: "200px",
@@ -89,6 +97,7 @@ const tabSelectedStyle = {
 };
 
 const viewMoreButtonStyle = {
+  marginTop: 2,
   borderRadius: 3,
   backgroundColor: colors.secondary,
   color: colors.text,
@@ -112,6 +121,7 @@ export const customCSS = {
   headerButtonStyle,
   footerStyle,
   cardStyle,
+  badgeStyle,
   imageStyle,
   artImageStyle,
   modalStyle,

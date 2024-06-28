@@ -10,10 +10,10 @@ const Works: React.FC = () => {
 
   return (
     <Box py={10}>
-      <Heading size="sm" mb={4}>
+      <Heading size="md" mb={6}>
         実績
       </Heading>
-      <SimpleGrid minChildWidth="300px" justifyItems="center" spacing={3}>
+      <SimpleGrid minChildWidth="300px" justifyItems="center" spacing={5}>
         {workItems.slice(0, 4).map((work) => (
           <WorkCard key={work.title} Work={work} />
         ))}

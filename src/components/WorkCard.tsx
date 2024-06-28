@@ -1,5 +1,15 @@
 import React from "react";
-import { Card, Image, Text, ScaleFade } from "@chakra-ui/react";
+import {
+  Card,
+  Image,
+  Text,
+  ScaleFade,
+  Box,
+  Badge,
+  CardFooter,
+  CardBody,
+  Stack,
+} from "@chakra-ui/react";
 import { WorkItem } from "../types/portfolioData";
 import { customCSS } from "../styles/customCSS";
 
@@ -16,9 +26,23 @@ const WorkCard: React.FC<WorkCardProps> = ({ Work }) => {
           alt={Work.title}
           sx={customCSS.imageStyle}
         />
-        <Text fontSize="sm" fontWeight="bold" textAlign="center" mb={2}>
-          {Work.title}
-        </Text>
+        <CardBody py={2}>
+          <Text fontSize="sm" fontWeight="bold">
+            {Work.title}
+          </Text>
+          <Text fontSize="0.75rem" pt={1}>
+            {Work.description}
+          </Text>
+        </CardBody>
+        <CardFooter pt={1} pb={3}>
+          <Stack direction="row" sx={{ flexWrap: "nowrap" }}>
+            {Work.language.map((language, index) => (
+              <Badge key={index} sx={customCSS.badgeStyle}>
+                {language}
+              </Badge>
+            ))}
+          </Stack>
+        </CardFooter>
       </Card>
     </ScaleFade>
   );
