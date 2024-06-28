@@ -16,7 +16,7 @@ import { Helpers } from "../helpers/DataHelpers";
 const Experience: React.FC = () => {
   const experienceItems: WorkItem[] = experiencesData;
   return (
-    <Box py={10}>
+    <Box py={10} textAlign={{ base: "center", sm: "left" }}>
       <Heading size="md" mb={6}>
         業務経験
       </Heading>

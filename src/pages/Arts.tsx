@@ -29,7 +29,7 @@ const Arts: React.FC = () => {
   }, []);
 
   return (
-    <Container maxW="container.lg" my="130px">
+    <Container maxW="container.lg" my="130px" px={0}>
       <Heading size="md" mb="20px" textAlign="center">
         作品一覧
       </Heading>

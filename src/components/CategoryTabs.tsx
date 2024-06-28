@@ -44,7 +44,7 @@ const CategoryTabs = <T extends { category: string }>({
                   (item) => item.category === category.toLowerCase()
                 );
           return (
-            <TabPanel key={index}>
+            <TabPanel key={index} px={0}>
               <SimpleGrid
                 minChildWidth={minItemWidth}
                 justifyItems="center"

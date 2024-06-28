@@ -9,11 +9,11 @@ const Art: React.FC = () => {
   const artItems: ArtItem[] = artsData;
 
   return (
-    <Box py={10}>
+    <Box py={10} textAlign={{ base: "center", sm: "left" }}>
       <Heading size="md" mb={6}>
         作品
       </Heading>
-      <SimpleGrid minChildWidth="100px" justifyItems="center" spacing={5}>
+      <SimpleGrid minChildWidth="100px" justifyItems="center" spacing={3}>
         {artItems.slice(0, 12).map((art) => (
           <ImageModal key={art.title} Art={art} />
         ))}

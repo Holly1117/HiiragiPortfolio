@@ -7,7 +7,7 @@ import techStackData from "../assets/json/techStackData.json";
 const TechStack: React.FC = () => {
   const techItem: TechItem[] = techStackData;
   return (
-    <Box py={10}>
+    <Box py={10} textAlign={{ base: "center", sm: "left" }}>
       <Heading size="md" mb={6}>
         技術スタック
       </Heading>

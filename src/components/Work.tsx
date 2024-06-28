@@ -10,7 +10,7 @@ const Works: React.FC = () => {
 
   return (
     <Box py={10}>
-      <Heading size="md" mb={6}>
+      <Heading size="md" mb={6} textAlign={{ base: "center", sm: "left" }}>
         実績
       </Heading>
       <SimpleGrid minChildWidth="300px" justifyItems="center" spacing={5}>
