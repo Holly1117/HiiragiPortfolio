@@ -9,8 +9,8 @@ const Works: React.FC = () => {
   const workItems: WorkItem[] = worksData;
 
   return (
-    <Box py={10}>
-      <Heading size="md" mb={6} textAlign={{ base: "center", sm: "left" }}>
+    <Box py={10} textAlign={{ base: "center", sm: "left" }}>
+      <Heading size="md" mb={6}>
         実績
       </Heading>
       <SimpleGrid minChildWidth="300px" justifyItems="center" spacing={5}>

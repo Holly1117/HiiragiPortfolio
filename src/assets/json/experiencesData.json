@@ -1,26 +1,41 @@
 [
   {
+    "id": "",
     "title": "アプリ開発",
+    "headingDescription": "",
     "description": "社内アプリ開発に携わり、業務効率化とコスト削減を目指して、各部署の要望を織り込んだシステムを構築しました。更に、既存システムをゼロから再構築し、オンプレミス環境をサーバーレスに移行するとともに、最新の技術を取り入れてシステムの性能向上を図りました。",
     "url": "",
     "image": "/images/soft.svg",
     "category": "",
-    "language": []
+    "language": [],
+    "repository": "",
+    "role": "",
+    "members": []
   },
   {
+    "id": "",
     "title": "ウェブサイト制作",
+    "headingDescription": "",
     "description": "Webアプリのフロントエンド開発に従事し、各部署の要望を受けて既存WebアプリのUIを大幅に改善しました。また、最新のフレームワークを導入し、パフォーマンスの最適化とレスポンシブデザインを実現しました。",
     "url": "",
     "image": "/images/web.svg",
     "category": "",
-    "language": []
+    "language": [],
+    "repository": "",
+    "role": "",
+    "members": []
   },
   {
+    "id": "",
     "title": "ITインフラ",
+    "headingDescription": "",
     "description": "オンプレミスのActiveDirectoryをクラウドに移行し、設計・構築・保守を担当しました。これにより業務の効率化とセキュリティの強化を実現しました。さらに、AWSのEC2を使用してWebアプリのサーバーを構築し、クラウド環境での運用経験も積みました。",
     "url": "",
     "image": "/images/server.svg",
     "category": "",
-    "language": []
+    "language": [],
+    "repository": "",
+    "role": "",
+    "members": []
   }
 ]

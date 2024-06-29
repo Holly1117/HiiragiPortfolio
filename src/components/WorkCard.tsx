@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Card,
   Image,
@@ -18,9 +19,17 @@ interface WorkCardProps {
 }
 
 const WorkCard: React.FC<WorkCardProps> = ({ Work }) => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(`/detail/${Work.id}`);
+  };
   return (
     <ScaleFade initialScale={0.5} in={true}>
-      <Card sx={customCSS.cardStyle} _hover={customCSS.hoverEffectStyle}>
+      <Card
+        sx={customCSS.workCardStyle}
+        _hover={customCSS.hoverEffectStyle}
+        onClick={handleClick}
+      >
         <Image
           src={process.env.PUBLIC_URL + Work.image}
           alt={Work.title}
@@ -37,7 +46,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ Work }) => {
         <CardFooter pt={1} pb={3}>
           <Stack direction="row" sx={{ flexWrap: "nowrap" }}>
             {Work.language.map((language, index) => (
-              <Badge key={index} sx={customCSS.badgeStyle}>
+              <Badge key={index} sx={customCSS.cardBadgeStyle}>
                 {language}
               </Badge>
             ))}

@@ -1,98 +1,15 @@
 [
   {
+    "id": "convinilist",
     "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
+    "headingDescription": "",
+    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。ウェブデザインはいつき様が担当しています。",
     "url": "https://conveni.hiiragi.dev/",
     "image": "/images/works/convinilist.png",
     "category": "ウェブサイト",
-    "language": ["C#", "Java", "Python", "R", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "ウェブサイト",
-    "language": ["C#", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "アプリケーション",
-    "language": ["C#", "Java", "Python", "R", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "アプリケーション",
-    "language": ["C#", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "ウェブサイト",
-    "language": ["C#", "Java", "Python", "R", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "その他",
-    "language": ["C#", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "アプリケーション",
-    "language": ["C#", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "アプリケーション",
-    "language": ["C#", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "その他",
-    "language": ["C#", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "アプリケーション",
-    "language": ["C#", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "その他",
-    "language": ["C#", "Java", "Python", "R"]
-  },
-  {
-    "title": "コンビニリスト",
-    "description": "コンビニ新作一覧は、大手コンビニ4社の新作商品をまとめて閲覧することができるサービスです。",
-    "url": "https://conveni.hiiragi.dev/",
-    "image": "/images/works/convinilist.png",
-    "category": "アプリケーション",
-    "language": ["C#", "Java", "Python", "R"]
+    "language": ["HTML", "CSS", "JavaScript", "Python"],
+    "repository": "https://conveni.hiiragi.dev/",
+    "role": "バックエンド",
+    "members": [{ "name": "いつき", "url": "https://ysoft.jp/" }]
   }
 ]

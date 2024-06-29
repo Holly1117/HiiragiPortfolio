@@ -54,8 +54,25 @@ const cardStyle = {
     "rgba(15, 15, 15, 0.2) 0px 0px 0px 1px, rgba(15, 15, 15, 0.2) 0px 2px 4px",
 };
 
-const badgeStyle = {
+const workCardStyle = {
+  maxWidth: "330px",
+  backgroundColor: colors.secondary,
+  color: colors.text,
+  borderRadius: 3,
+  boxShadow:
+    "rgba(15, 15, 15, 0.2) 0px 0px 0px 1px, rgba(15, 15, 15, 0.2) 0px 2px 4px",
+};
+
+const cardBadgeStyle = {
   fontSize: "0.7rem",
+  textTransform: "none",
+  fontWeight: "none",
+  backgroundColor: colors.tertiary,
+  color: colors.text,
+};
+
+const badgeStyle = {
+  fontSize: "sm",
   textTransform: "none",
   fontWeight: "none",
   backgroundColor: colors.tertiary,
@@ -69,12 +86,17 @@ const imageStyle = {
   roundedTop: 3,
 };
 
+const detailImageStyle = {
+  backgroundColor: colors.secondary,
+  width: "100%",
+  roundedTop: 3,
+};
+
 const artImageStyle = {
   backgroundColor: colors.secondary,
   maxHeight: "100px",
   minHeight: "100px",
   borderRadius: 3,
-  cursor: "pointer",
 };
 
 const modalStyle = {
@@ -104,6 +126,12 @@ const viewMoreButtonStyle = {
   paddingX: 10,
 };
 
+const detailTextStyle = {
+  fontSize: "sm",
+  color: colors.inactiveText,
+  fontWeight: "bold",
+};
+
 const hoverEffectStyle = {
   opacity: 0.7,
   transition: "all 0.4s ease",
@@ -121,13 +149,17 @@ export const customCSS = {
   headerButtonStyle,
   footerStyle,
   cardStyle,
+  workCardStyle,
+  cardBadgeStyle,
   badgeStyle,
   imageStyle,
+  detailImageStyle,
   artImageStyle,
   modalStyle,
   tabButtonStyle,
   tabSelectedStyle,
   viewMoreButtonStyle,
+  detailTextStyle,
   hoverEffectStyle,
   headerHoverStyle,
 };

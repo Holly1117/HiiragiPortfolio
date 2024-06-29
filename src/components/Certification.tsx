@@ -7,8 +7,8 @@ import certificationsData from "../assets/json/certificationsData.json";
 const Certification: React.FC = () => {
   const tecmItems: TechItem[] = certificationsData;
   return (
-    <Box py={10}>
-      <Heading size="md" mb={6} textAlign={{ base: "center", sm: "left" }}>
+    <Box py={10} textAlign={{ base: "center", sm: "left" }}>
+      <Heading size="md" mb={6}>
         資格
       </Heading>
       <SimpleGrid minChildWidth="300px" spacing={4}>
