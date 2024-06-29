@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/HiiragiPortfolio/static/js/main.5e67b127.js",
+    "main.js": "/HiiragiPortfolio/static/js/main.fa675b9a.js",
     "static/js/453.1407b060.chunk.js": "/HiiragiPortfolio/static/js/453.1407b060.chunk.js",
     "index.html": "/HiiragiPortfolio/index.html",
-    "main.5e67b127.js.map": "/HiiragiPortfolio/static/js/main.5e67b127.js.map",
+    "main.fa675b9a.js.map": "/HiiragiPortfolio/static/js/main.fa675b9a.js.map",
     "453.1407b060.chunk.js.map": "/HiiragiPortfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.5e67b127.js"
+    "static/js/main.fa675b9a.js"
   ]
 }
